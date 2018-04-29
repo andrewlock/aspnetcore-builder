@@ -1,5 +1,5 @@
 # Build image
-FROM microsoft/aspnetcore-build:2.0.6-2.1.101 AS builder
+FROM microsoft/aspnetcore-build:2.0.7-2.1.105 AS builder
 WORKDIR /sln
 
 ONBUILD COPY ./*.sln ./NuGet.config ./*.props ./*.targets  ./
