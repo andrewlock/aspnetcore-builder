@@ -1,5 +1,5 @@
 # Build image
-FROM microsoft/dotnet:2.1.401 AS builder
+FROM microsoft/dotnet:2.1.401-sdk AS builder
 WORKDIR /sln
 
 ONBUILD COPY ./*.sln ./NuGet.config ./*.props ./*.targets  ./
